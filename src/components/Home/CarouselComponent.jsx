@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react";
 
 function CarouselComponent() {
   return (
-    <div className="h-[50vh] sm:h-[60vh] xl:h-[85vh] 2xl:h-[50vh]">
+    <div className="h-[50vh] sm:h-[60vh] xl:h-[85vh] 2xl:h-[85vh]">
       <Carousel pauseOnHover>
         <img src="img1.jpg" alt="..." className='h-[50vh] sm:h-[60vh] xl:h-[85vh] 2xl:h-[50vh]'/>
         <img src="img2.jpg" alt="..." className='h-[50vh] sm:h-[60vh] xl:h-[85vh] 2xl:h-[50vh]'/>
