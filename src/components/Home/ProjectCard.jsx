@@ -9,7 +9,7 @@ function ProjectCard({url, title, desc}) {
           <img 
             src={url} 
             alt="Project" 
-            className="h-[50vh] w-[80vw] object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+            className="h-[30vh] md:h-[50vh] w-[80vw] object-cover transition-transform duration-300 ease-in-out hover:scale-105"
           />
         </div>
         <div className="pt-4">
