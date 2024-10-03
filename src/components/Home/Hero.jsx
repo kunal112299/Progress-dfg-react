@@ -11,7 +11,7 @@ function Hero() {
           <p className="pt-9 pr-4 text-[8px] mb-[30px] md:text-[13px] lg:text-[15px] lg:px-[10px] text-gray-400 text-justify"> At Design Factory Group, we're passionate about turning houses into homes, inside and out. Our mission is to transform every space into a personalized and functional oasis that reflects the unique style and personality of our clients. With a focus on both interior and exterior design, we take a holistic approach to creating harmonious living environments. From cozy living rooms to inviting outdoor retreats, we believe that every detail matters in making a house feel like a true home. With our expertise and dedication, we're committed to exceeding our clients' expectations and helping them achieve their dream living spaces.</p>
         </div>
        </div>
-       <div className="h-[24vh] md:h-[36vh] lg:h-[50vh] w-[100%]  mt-[10px] flex">
+       <div className="h-[24vh] md:h-[36vh] lg:h-[50vh] w-[100%]  mt-[10px] flex shadow-md pb-10">
           <div className="w-[50%]">
               <img className="w-full h-full object-cover" src="img4.jpg" alt=""/>
           </div>

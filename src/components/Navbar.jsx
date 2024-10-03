@@ -7,7 +7,7 @@ export default function Navbar() {
       name:"Home", link:"/"
     },
     {
-      name:"Projects", link:"/"
+      name:"Projects", link:"project"
     },
     {
       name:"Hiring", link:"/"
@@ -30,7 +30,7 @@ export default function Navbar() {
           {
             Links.map((link) => (
               <li key={link.name} className='md:ml-8 text-xl whitespace-nowrap md:my-0 my-7'>
-                <a href={link.link} className='text-gray-800  hover:text-orange-400 duraion-500'>{link.name}</a>
+                <a href={`#${link.link}`} className='text-gray-800  hover:text-orange-400 duraion-500'>{link.name}</a>
               </li>
             ))
           }
