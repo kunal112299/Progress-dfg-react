@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ProjectCard from '../Home/ProjectCard.jsx';
 import ProjectData from '../../Json/Project.json';
-import {Link} from 'react-router-dom'
 
-function Hero() {
+
+function ProjectList() {
   
   const [projectType, setProjectType] = useState('residential');
 
@@ -11,15 +11,10 @@ function Hero() {
   const projectData = ProjectData[projectType];
     
   return (
-    <div className='mt-12 px-5' id='project'>
-      <div className="flex justify-between items-center">
+    <div className='mt-24 px-5' id='project'>
+      <div className="flex justify-center items-center">
         <div className="md:text-4xl text-2xl roboto-slab-400">
-          <h1>Our latest Projects</h1>
-        </div>
-        <div className="absolute md:right-24 md:text-xl hidden md:flex">
-          <a href="" className='flex flex-row items-center gap-2 hover:text-2xl hover:text-orange-400 duration-500'>
-            See All <ion-icon name="arrow-forward-outline"></ion-icon>
-          </a>
+          <h1>Projects</h1>
         </div>
       </div>
 
@@ -54,15 +49,8 @@ function Hero() {
           )}
         </div>
       </div>
-
-      {/* Button for Mobile */}
-      <div className="md:hidden flex justify-center mt-4">
-        <Link to='/project' className='flex flex-row items-center gap-2 text-xl hover:text-2xl hover:text-orange-400 duration-500'>
-          See All <ion-icon name="arrow-forward-outline"></ion-icon>
-        </Link>
-      </div>
     </div>
   );
 }
 
-export default Hero;
+export default ProjectList;

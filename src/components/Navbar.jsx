@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Button from './Button.jsx';
+import { Link } from 'react-router-dom';
 export default function Navbar() {
 
   let Links = [
@@ -7,13 +8,13 @@ export default function Navbar() {
       name:"Home", link:"/"
     },
     {
-      name:"Projects", link:"project"
+      name:"Projects", link:"/project"
     },
     {
-      name:"Hiring", link:"/"
+      name:"Hiring", link:"#"
     },
     {
-      name:"About Us", link:"/"
+      name:"About Us", link:"#"
     }
   ];
   const [open, setopen] = useState(false);
@@ -30,7 +31,7 @@ export default function Navbar() {
           {
             Links.map((link) => (
               <li key={link.name} className='md:ml-8 text-xl whitespace-nowrap md:my-0 my-7'>
-                <a href={`#${link.link}`} className='text-gray-800  hover:text-orange-400 duraion-500'>{link.name}</a>
+                <Link to={`${link.link}`} className='text-gray-800  hover:text-orange-400 duraion-500'>{link.name}</Link>
               </li>
             ))
           }
