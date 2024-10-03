@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import ProjectCard from '../Home/ProjectCard.jsx';
 import ProjectData from '../../Json/Project.json';
 
-
 function ProjectList() {
   
   const [projectType, setProjectType] = useState('residential');
 
-  
   const projectData = ProjectData[projectType];
     
   return (
@@ -36,14 +34,18 @@ function ProjectList() {
 
       {/* Card Section */}
       <div className="flex justify-center items-center w-full pt-8">
-        <div className="w-full max-w-[80vw] md:max-w-[70vw] lg:max-w-[60vw]">
+        <div className="flex flex-wrap justify-center gap-6 w-full">
           {/* Display the last project data if available */}
           {projectData.length > 0 ? (
-            <ProjectCard
-              url={projectData[projectData.length - 1].img}
-              title={projectData[projectData.length - 1].name}
-              desc={projectData[projectData.length - 1].description}
-            />
+            projectData.map((project, index) => (
+              <div key={index} className="w-full sm:w-1/2 lg:w-1/3">
+                <ProjectCard
+                  url={project.img[0]}
+                  title={project.name}
+                  desc={project.description}
+                />
+              </div>
+            ))
           ) : (
             <p>No projects available</p>
           )}

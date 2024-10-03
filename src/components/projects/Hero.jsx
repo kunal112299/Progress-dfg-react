@@ -17,9 +17,9 @@ function Hero() {
           <h1>Our latest Projects</h1>
         </div>
         <div className="absolute md:right-24 md:text-xl hidden md:flex">
-          <a href="" className='flex flex-row items-center gap-2 hover:text-2xl hover:text-orange-400 duration-500'>
+          <Link to="/project" className='flex flex-row items-center gap-2 hover:text-2xl hover:text-orange-400 duration-500'>
             See All <ion-icon name="arrow-forward-outline"></ion-icon>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ function Hero() {
           {/* Display the last project data if available */}
           {projectData.length > 0 ? (
             <ProjectCard
-              url={projectData[projectData.length - 1].img}
+              url={projectData[projectData.length - 1].img[0]}
               title={projectData[projectData.length - 1].name}
               desc={projectData[projectData.length - 1].description}
             />

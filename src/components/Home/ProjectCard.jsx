@@ -4,7 +4,7 @@ import React from 'react'
 function ProjectCard({url, title, desc}) {
   return (
     <>
-      <div className="border border-gray-300 mx-4 my-6 p-4 shadow-lg hover:shadow-2xl transition-shadow duration-800 transform hover:-translate-y-2">
+      <div className="border border-gray-300 mx-4 my-6 p-4 shadow-lg hover:shadow-2xl transition-shadow duration-800 transform hover:-translate-y-2 cursor-pointer">
         <div className="overflow-hidden">
           <img 
             src={url} 

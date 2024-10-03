@@ -1,9 +1,71 @@
 {
     "residential": [
       {
-        "img": "https://res.cloudinary.com/dcywytnpi/image/upload/v1727961625/dfg/eotjcvdwocj0jc1dqqxc.jpg",
+        "img": [
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727961625/dfg/eotjcvdwocj0jc1dqqxc.jpg", 
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727961625/dfg/lg1ypfg8vdrub8rp0dcq.jpg"
+        ],
         "name": "Upcoming Residential Bungalow",
-        "description": "UTTORA TOWNSHIP, Siliguri, West Bengal."
+        "description": "Siliguri, West Bengal."
+      },
+      {
+        "img": [
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727961838/RC_view01_g5quo2.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727961830/RC_view02_nwyglm.jpg"
+        ],
+        "name": "Residential Bungalow, Banarhat",
+        "description": "West Bengal."
+      },
+      {
+        "img":[
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727962061/ANSHULJI_01_qigdun.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727962063/ANSHULJI_02_dlcxuc.jpg"
+        ],
+        "name": "Residential Bungalow, Begusarai",
+        "description":"Bihar"
+      },
+      {
+        "img":[
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965721/DEBASHISH_KUNDU_OP02_mu3uav.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965721/DEBASHISH_KUNDU_OP022_v9thvb.jpg"
+        ],
+        "name": "Residential Bungalow, Siliguri",
+        "description":"West Bengal"
+      },
+      {
+        "img":[
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965721/TRIPTI_SAHA-01_ozgc9m.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965720/TRIPTI_SAHA-02_miz1uo.jpg"
+        ],
+        "name":"Residential Bungalow, Siliguri",
+        "description": "West Bengal"
+      },
+      {
+        "img":[
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965719/WhatsApp_Image_2024-05-22_at_00.43.06.jpeg_vddsrt.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965719/WhatsApp_Image_2024-05-22_at_00.43.06_1_.jpeg_t9a8d4.jpg"
+        ],
+        "name":"Residential Bungalow, Siliguri",
+        "description": "West Bengal"
+      },
+      {
+        "img":[
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965729/MEHTABJI_TEST_aprtfl.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727971324/Mehtabji_ogk4zn.jpg"
+        ],
+        "name":"Residential Apartment, Siliguri",
+        "description":"West Bengal"
+      },
+      {
+        "img":[
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965720/NEWTOWN_PARA_CLOSE_UP_DAY_VIEW_rsvm7z.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727973549/NEWTOWN_PARA_ISOMETRIC_NIGHT_VIEW_ojlmup.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727973548/NEWTOWN_PARA_FRONT_NIGHT_VIEW_a3vt8b.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727973548/NEWTOWN_PARA_ISOMETRIC_DAY_VIEW_apcegv.jpg",
+          "https://res.cloudinary.com/dcywytnpi/image/upload/v1727965720/NEWTOWN_PARA_FRONT_DAY_VIEW_28.05.2024_mapqb0.jpg"
+        ],
+        "name":"Residential Apartment, Jalpaiguri",
+        "description":"West Bengal"
       }
     ],
     "commercial": [
