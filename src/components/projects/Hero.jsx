@@ -2,14 +2,25 @@ import React, { useState } from 'react';
 import ProjectCard from '../Home/ProjectCard.jsx';
 import ProjectData from '../../Json/Project.json';
 import {Link} from 'react-router-dom'
+import Modal from './Modal.jsx';
 
 function Hero() {
   
   const [projectType, setProjectType] = useState('residential');
-
+  const [selectedProject, setSelectedProject] = useState(null); // State to store selected project
+  const [isModalOpen, setIsModalOpen] = useState(false);
   
   const projectData = ProjectData[projectType];
     
+  const handleClick = (project) => {
+    setSelectedProject(project); // Set the selected project data
+    setIsModalOpen(true);        // Open the modal
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);  // Clear selected project
+    setIsModalOpen(false);     // Close the modal
+  };
   return (
     <div className='mt-12 px-5' id='project'>
       <div className="flex justify-between items-center">
@@ -22,6 +33,15 @@ function Hero() {
           </Link>
         </div>
       </div>
+
+      {isModalOpen && selectedProject && (
+        <Modal 
+          images={selectedProject.img}     // Pass the selected images to Modal
+          projectName={selectedProject.name} // Pass the project name to Modal
+          onClose={closeModal}             // Function to close the modal
+        />
+      )}
+
 
       {/* Residential and Commercial */}
       <div className="flex justify-center gap-6 pt-10 text-xl ">
@@ -45,6 +65,7 @@ function Hero() {
           {/* Display the last project data if available */}
           {projectData.length > 0 ? (
             <ProjectCard
+              onClick={() => handleClick(projectData[projectData.length - 1])}
               url={projectData[projectData.length - 1].img[0]}
               title={projectData[projectData.length - 1].name}
               desc={projectData[projectData.length - 1].description}
