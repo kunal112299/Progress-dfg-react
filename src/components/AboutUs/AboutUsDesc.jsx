@@ -4,7 +4,7 @@ function AboutUsDesc() {
   return (
     <div>
       <div className="w-full mt-24 px-5">
-      <h1 className="flex justify-center text-xl md:text-3xl text-[#333] karla-regular">About us</h1>
+      <h1 className="flex justify-center text-xl md:text-4xl text-[#333] karla-regular">About us</h1>
       <hr className="w-20 h-[1px] mx-auto my-8 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"/>
     </div>
       <div>
