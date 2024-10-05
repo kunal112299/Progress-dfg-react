@@ -11,10 +11,10 @@ export default function Navbar() {
       name:"Projects", link:"/project"
     },
     {
-      name:"Hiring", link:"#"
+      name:"Hiring", link:""
     },
     {
-      name:"About Us", link:"#"
+      name:"About Us", link:"/aboutUs"
     }
   ];
   const [open, setopen] = useState(false);

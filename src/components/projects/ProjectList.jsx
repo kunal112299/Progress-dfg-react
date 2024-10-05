@@ -5,24 +5,23 @@ import Modal from './Modal.jsx';
 
 function ProjectList() {
   const [projectType, setProjectType] = useState('residential');
-  const [selectedProject, setSelectedProject] = useState(null); // State to store selected project
+  const [selectedProject, setSelectedProject] = useState(null); 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const projectData = ProjectData[projectType]; // Select either residential or commercial projects
-
-  // Function to handle card click
+  const projectData = ProjectData[projectType]; 
+  
   const handleClick = (project) => {
-    setSelectedProject(project); // Set the selected project data
-    setIsModalOpen(true);        // Open the modal
+    setSelectedProject(project); 
+    setIsModalOpen(true);        
   };
 
   const closeModal = () => {
-    setSelectedProject(null);  // Clear selected project
-    setIsModalOpen(false);     // Close the modal
+    setSelectedProject(null);  
+    setIsModalOpen(false);     
   };
 
   return (
-    <div className="mt-24 px-5" id="project">
+    <div className="mt-24 px-5 " id="project" >
       <div className="flex justify-center items-center">
         <div className="md:text-4xl text-2xl roboto-slab-400">
           <h1>Projects</h1>
@@ -32,9 +31,9 @@ function ProjectList() {
       {/* Modal */}
       {isModalOpen && selectedProject && (
         <Modal 
-          images={selectedProject.img}     // Pass the selected images to Modal
-          projectName={selectedProject.name} // Pass the project name to Modal
-          onClose={closeModal}             // Function to close the modal
+          images={selectedProject.img}     
+          projectName={selectedProject.name} 
+          onClose={closeModal}             
         />
       )}
 
@@ -61,10 +60,10 @@ function ProjectList() {
             projectData.map((project, index) => (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/3">
                 <ProjectCard
-                  url={project.img[0]}  // Display the first image as a thumbnail
-                  title={project.name}  // Project name
-                  desc={project.description} // Project description
-                  onClick={() => handleClick(project)} // Handle click event for the card
+                  url={project.img[0]}  
+                  title={project.name}  
+                  desc={project.description} 
+                  onClick={() => handleClick(project)} 
                 />
               </div>
             ))

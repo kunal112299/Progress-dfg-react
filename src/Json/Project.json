@@ -69,7 +69,16 @@
       }
     ],
     "commercial": [
-        
+        {
+          "img": ["https://res.cloudinary.com/dcywytnpi/image/upload/v1728067773/COMMERCIAL.jpeg_lfvbly.jpg"],
+          "name": "Commercial Building, Siliguri",
+          "description": "West Bengal"
+        },
+        {
+          "img": ["https://res.cloudinary.com/dcywytnpi/image/upload/v1728067773/RESIDENTIAL_CUM_COMMERCIAL.jpeg_uddnvj.jpg"],
+          "name": "Commercial Building, Siliguri",
+          "description": "West Bengal"
+        }
     ]
   }
   

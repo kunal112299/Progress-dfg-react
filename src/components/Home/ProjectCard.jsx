@@ -4,6 +4,8 @@ import React from 'react'
 function ProjectCard({url, title, desc, onClick }) {
   return (
     <>
+
+      
       <div className="border border-gray-300 mx-4 my-6 p-4 shadow-lg hover:shadow-2xl transition-shadow duration-800 transform hover:-translate-y-2 cursor-pointer"  onClick={onClick}>
         <div className="overflow-hidden">
           <img 
