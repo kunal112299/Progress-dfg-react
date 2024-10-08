@@ -5,6 +5,7 @@ import HeroProject from "./components/projects/Hero.jsx"
 import Footer from "./components/Footer.jsx"
 import Aboutus from "./components/AboutUs/Aboutus.jsx"
 import { Link } from 'react-router-dom'
+import ContactMain from "./components/ContactUs/ContactMain.jsx"
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
         <Hero/>
       </div>
       <HeroProject/>
-    <div>
+    <div className="pb-20">
       <div className="mt-12 px-5" id='#aboutus'>
         <div className="flex justify-between items-center">
         <div className="md:text-4xl text-2xl roboto-slab-400">
@@ -37,6 +38,7 @@ function App() {
         </Link>
     </div>
   </div>
+      <ContactMain/>
       <Footer/>
     </>
   )

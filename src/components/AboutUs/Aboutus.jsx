@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {Link} from 'react-router-dom'
+
 
 const data = [
   {
@@ -36,7 +36,7 @@ var settings = {
   dots: true,
   infinite: true, 
   speed: 500,
-  slidesToShow: 3, 
+  slidesToShow: 1, 
   slidesToScroll: 1, 
   autoplay: true,
     speed: 500,
@@ -82,19 +82,19 @@ function Aboutus() {
   return (
     <>
     
-      <div className="w-[80%] sm:w-[90%] md:w-[90%] m-auto"> 
+      <div className="w-[80%] sm:w-[90%] md:w-[50%] m-auto"> 
         <div className="mt-20 slider-container">
           <Slider {...settings}>
             {
               data.map((d, index) => (
-                <div key={index} className='bg-white rounded-xl text-black h-[430px] shadow-md'>
+                <div key={index} className='bg-white rounded-xl text-black h-[500px] shadow-md'>
                   <div className="h-56 sm:h-48 rounded-t-xl bg-orange-400 flex justify-center items-center">
-                    <img src={d.img} alt={d.name} className='w-32 h-32 sm:w-44 sm:h-44 rounded-full'/>
+                    <img src={d.img} alt={d.name} className='w-32 h-32 sm:w-44 sm:h-44 rounded-full object-cover'/>
                   </div>
                   <div className="flex items-center flex-col p-4 gap-2 sm:gap-4">
-                    <h1 className='text-lg sm:text-2xl font-bold'>{d.name}</h1>
-                    <h2 className='text-md sm:text-xl'>({d.title})</h2>
-                    <p className='text-sm text-justify'>{d.desc}</p>
+                  <i class='bx bxs-quote-alt-left'></i><p className='text-xl text-justify'>{d.desc}</p><i class='bx bxs-quote-alt-right'></i>
+                    <h1 className='text-lg sm:text-xl font-bold'>{d.name}</h1>
+                    <h2 className='text-sm sm:text-md text-gray-500'>({d.title})</h2>
                   </div>
                 </div>
               ))
