@@ -1,4 +1,6 @@
+
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -7,21 +9,21 @@ function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left">
           <p className="text-lg font-semibold">Design Factory Group</p>
-          <p className="text-sm">Ambikanagar road, Nayapara, Siliguri, West Bengal 735135</p>
+          <p className="text-sm">Ground Floor, Bhakti Apartment, Ward No. 30, Deshbandhu Para, Near Gaudiya Math, P.O.- Siliguri, Dist.- Darjeeling, Pin Code - 734004.</p>
         </div>
         <div className="mt-4 md:mt-0">
-          <ul className="flex justify-center md:justify-end space-x-4">
+          <ul className="flex justify-center md:justify-end space-x-4 cursor-pointer list-none">
             <li>
-              <a href="#" className="text-sm hover:text-orange-400 transition duration-300">Home</a>
+              <Link to="/" className="text-sm hover:text-orange-400 transition duration-300 ">Home</Link>
             </li>
             <li>
-              <a href="#" className="text-sm hover:text-orange-400 transition duration-300">About</a>
+              <Link to="/aboutus" className="text-sm hover:text-orange-400 transition duration-300 ">About</Link>
             </li>
             <li>
-              <a href="#" className="text-sm hover:text-orange-400 transition duration-300">Services</a>
+              <Link to="/project" className="text-sm hover:text-orange-400 transition duration-300 ">Services</Link>
             </li>
             <li>
-              <a href="#" className="text-sm hover:text-orange-400 transition duration-300">Contact</a>
+              <Link to="/contactus" className="text-sm hover:text-orange-400 transition duration-300 ">Contact</Link>
             </li>
           </ul>
         </div>

@@ -10,11 +10,11 @@ export default function Navbar() {
     {
       name:"Projects", link:"/project"
     },
+    // {
+    //   name:"Hiring", link:""
+    // },
     {
-      name:"Hiring", link:""
-    },
-    {
-      name:"About Us", link:"/aboutUs"
+      name:"About Us", link:"/aboutus"
     }
   ];
   const [open, setopen] = useState(false);
@@ -36,7 +36,7 @@ export default function Navbar() {
             ))
           }
           <Button>
-            Contact Us
+            <Link to={"/contactus"}>Contact Us</Link>
           </Button>
         </ul>
       </div>

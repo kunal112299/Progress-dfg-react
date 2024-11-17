@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+@media (max-width: 420px) { 
+  .coarosel-container .carousel-description p{
+    font-size: 14px;
+  }
+ }
